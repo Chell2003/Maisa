@@ -208,7 +208,7 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 600px) {
   .container {
     position: relative;
     background: whitesmoke;
