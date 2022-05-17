@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(104, 187, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1100px;
+    background: whitesmoke;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 30px 50px   rgb(56, 53, 53);
+
+
+.left_side{
+    position: relative;
+    background: rgb(99, 90, 91);
+    padding: 40px;
+    img{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        border-radius: 50%;
+    }
+    h2{
+        font-size: 1.5em;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+    span{
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+    
+
+}
+.ptext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.Contact{
+    padding-top: 40px;
+    border-bottom: 1px solid white;
+    ul{
+        position: relative;
+    }
+    li{
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .icon{
+        display: inline-block;
+        width: 30px;
+        font-size: 20px;
+        color: white;
+    }
+    span{
+        color: aliceblue;
+        font-weight: 400;
+    }
+}
+.title{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.Contact_Education{
+    border-bottom: 1px solid white;
+    margin-top: 40px;
+    h5{
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
+    }
+    h4{
+        margin-top: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: azure;
+    }
+    ul{
+        position: relative;
+    }
+    li{
+        position: relative;
+        list-style: none;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+
+}
+
+
+.right_side{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+
+    .right_title{
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 1px solid gray;
+
+    }
+    .group2{
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid gray;
+        .left1{
+            margin-left: 25px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+    }
+    .language{
+        text-transform: uppercase;
+        margin-top: 40px;
+        text-align: center;
+
+    }
+    .center{
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .left5,.right5{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+}
+.character{
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+.character2{
+    margin-top: 35px;
+    border-bottom: 1px solid gray;
+    li{
+        font-weight: 600;
+    }
+}
+
+}
+
+@media screen and (max-width: 325px){
+    .container{
+        position: relative;
+        
+        background: whitesmoke;
+        margin: 0px;
+        box-shadow: 0 30px 50px   rgb(56, 53, 53);
+        grid-template-columns: repeat(1, 1fr);
+
+        .left_side{
+            padding: 20px;
+            img{
+                width: 200px;
+                height: 200px;
+                position: relative;
+                border-radius: 50%;
+            }
+            h2{
+                font-size: 1em;
+            }
+            .Contact{
+                margin-top: 5px;
+                .title{
+                    margin-top: 0px;
+                    font-size: 15px;
+                }
+            }
+            .icon{
+                display: inline-block;
+                width: 15px;
+                font-size: 11px;
+                color: white; 
+            }
+
+        }
+        .right_side{
+            padding: 15px;
+
+            .right_title{
+                font-size: 12px;
+            }
+            .group2{
+                
+                font-size: 9px;
+            }
+            .center{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .character2{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+    
+}
